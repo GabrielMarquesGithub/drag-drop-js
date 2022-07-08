@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style css -->
+    <link id="theme" rel="stylesheet" href="./assets/style/theme/light.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+
+    <title>Drag-Drop</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Drag-Drop</h1>
+        <label class="switch">
+          <input id="changeThemeButton" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </header>
+
+      <section class="lists-container">
+        <div class="create-button-container">
+          <button class="button-open-modal">Create a new task</button>
+          <span class="delete"
+            ><img class="delete" src="./assets/img/trash.svg" alt="lixeira"
+          /></span>
+        </div>
+        <div class="modal-bg">
+          <div class="create-modal-container">
+            <form>
+              <div class="radio-input-container">
+                <label>
+                  <input
+                    name="select-list"
+                    class="select-list"
+                    value="list-1"
+                    type="radio"
+                  />
+                  <span>Lista 1</span>
+                </label>
+                <label>
+                  <input
+                    name="select-list"
+                    class="select-list"
+                    value="list-2"
+                    type="radio"
+                  />
+                  <span>Lista 2</span>
+                </label>
+                <label>
+                  <input
+                    name="select-list"
+                    class="select-list"
+                    value="list-3"
+                    type="radio"
+                  />
+                  <span>Lista 3</span>
+                </label>
+              </div>
+              <input id="text-input" type="text" placeholder="Tarefa..." />
+              <div class="radio-input-container">
+                <label>
+                  <input
+                    name="select-color"
+                    class="select-color"
+                    value="#eaeaea"
+                    type="radio"
+                  />
+                  <span>Anotação</span>
+                </label>
+                <label>
+                  <input
+                    name="select-color"
+                    class="select-color"
+                    value="#2E86C1"
+                    type="radio"
+                  />
+                  <span>Tarefa</span>
+                </label>
+                <label>
+                  <input
+                    name="select-color"
+                    class="select-color"
+                    value="#ffc857"
+                    type="radio"
+                  />
+                  <span>Urgente</span>
+                </label>
+              </div>
+              <button class="button-create" type="button">
+                Criar Anotação
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="list-container">
+          <h3>Lista 1</h3>
+          <ul id="list-1"></ul>
+        </div>
+        <div class="list-container">
+          <h3>Lista 2</h3>
+          <ul id="list-2"></ul>
+        </div>
+        <div class="list-container">
+          <h3>Lista 3</h3>
+          <ul id="list-3"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
